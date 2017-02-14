@@ -93,7 +93,7 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
