@@ -11,8 +11,8 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">  
+  <canvas id="bg-canvas" height="700" width="1500"></canvas>
   {% include '_scripts/third-party/analytics.swig' %}
 
   {% set container_class = "container one-collumn " %}
@@ -72,6 +72,7 @@
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
   {% include '_components/algolia-search/assets.swig' %}
-
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/babel-polyfill/7.0.0-alpha.1/polyfill.min.js"> </script>
 </body>
 </html>
